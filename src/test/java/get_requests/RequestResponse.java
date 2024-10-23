@@ -56,15 +56,15 @@ public class RequestResponse {
 
     @Test
     public void test01() {
-        //a) Set the url :
+        //1) Set the url :
         //   API nin url ini ayarlayınız
         String url = "https://petstore.swagger.io/v2/pet/320";
 
-        //b) Set the expected data / payland :
+        //2) Set the expected data / payland :
         //      Beklenen datayi ayarlayinız
 
 
-        //c) Send the request and get the response :
+        //3) Send the request and get the response :
         //      Request gönderilir ve response alınır
 
         Response response = given().when().get(url);
@@ -78,5 +78,9 @@ public class RequestResponse {
         System.out.println("Response Header = " + response.headers());
         System.out.println("Response Date: = " + response.header("Date"));
         System.out.println("Response Server: = " + response.header("Server"));
+
+        //4) Do Assertions
+        ///////////////////////
+
     }
 }
