@@ -25,7 +25,7 @@ public class GetRequestResponse04 extends PetStoreBaseUrl {
         specification.pathParams("p1","pet","p2",7777);
 
         given(specification).when().
-                get("/{p1}/{p2}").
+                get("{p1}/{p2}").
                 then().
                 statusCode(200).
                 contentType(ContentType.JSON).
