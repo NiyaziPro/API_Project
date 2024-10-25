@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.not;
 
-public class GetRequestResponse02 {
+public class GetRequest02 {
     
     /*
     Given

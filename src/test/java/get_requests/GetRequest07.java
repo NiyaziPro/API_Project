@@ -3,7 +3,6 @@ package get_requests;
 import baseUrl.HerokuAppBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -11,7 +10,7 @@ import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
 
 
-public class GetRequestResponse07 extends HerokuAppBaseUrl {
+public class GetRequest07 extends HerokuAppBaseUrl {
     
     /*
     Given

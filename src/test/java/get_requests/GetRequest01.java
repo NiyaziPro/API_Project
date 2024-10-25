@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
 
-public class GetRequestResponse01 {
+public class GetRequest01 {
 
 
     @Test

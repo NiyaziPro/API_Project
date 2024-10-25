@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class GetRequestResponse04 extends PetStoreBaseUrl {
+public class GetRequest04 extends PetStoreBaseUrl {
 
     /*
     Given

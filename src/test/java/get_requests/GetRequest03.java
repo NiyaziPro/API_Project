@@ -3,7 +3,6 @@ package get_requests;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.hamcrest.Matcher;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,7 +10,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
 
-public class GetRequestResponse03 {
+public class GetRequest03 {
 
     /*
     Given
