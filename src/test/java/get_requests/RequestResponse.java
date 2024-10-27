@@ -60,7 +60,7 @@ public class RequestResponse {
         //   API nin url ini ayarlayınız
         String url = "https://petstore.swagger.io/v2/pet/320";
 
-        //2) Set the expected data / payland :
+        //2) Set the expected data / payload :
         //      Beklenen datayi ayarlayinız
 
 

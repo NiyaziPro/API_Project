@@ -12,3 +12,38 @@ Hamcrest Matchers Metotları:
     11. allOf(): Belirtilen tüm şartların doğru olup olmadığını kontrol eder.
     12. greaterThan(), greaterThanOrEqualTo(), lessThan(), lessThanOrEqualTo():
         Sayısal değerleri karşılaştırmak için kullanılan metotlar.
+
+
+        Hamcrest'in en çok kullanılan matcher'ları ve kısa açıklamaları:
+
+        is(value) - Belirtilen değere eşit mi?
+
+        equalTo(value) - Nesneler eşit mi?
+
+        not(matcher) - Koşulu sağlamıyor mu?
+
+        containsString(substring) - Alt dizeyi içeriyor mu?
+
+        startsWith(prefix) / endsWith(suffix) - Belirli bir başlangıç/bitiş var mı?
+
+        hasItem(item) / hasItems(items) - Koleksiyonda belirtilen öğe/öğeler var mı?
+
+        hasSize(size) - Koleksiyon veya dizinin boyutu doğru mu?
+
+        empty() / emptyArray() - Koleksiyon veya dizi boş mu?
+
+        greaterThan(value) / lessThan(value) - Belirli bir değerden büyük/küçük mü?
+
+        anyOf(matchers) / allOf(matchers) - Koşullardan herhangi biri/tümü doğru mu?
+
+        instanceOf(class) - Nesne belirli bir sınıfın örneği mi?
+
+        closeTo(operand, error) - Belirli bir toleransla yakın mı?
+
+        hasProperty(propertyName) - Nesnede belirli bir özellik var mı?
+
+        arrayWithSize(size) - Dizi belirli bir boyuta sahip mi?
+
+        arrayContaining(items) - Dizi belirtilen öğeleri içeriyor mu?
+
+        Bu matcher’lar, testlerde nesnelerin beklenen özelliklere sahip olup olmadığını hızlıca kontrol etmek için kullanılır.
