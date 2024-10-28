@@ -65,14 +65,14 @@ public class Get09 extends JsonPlaceHolderBaseUrl {
         assertEquals(10, jsonList.size());
 
         //"Id"si 5 den küçük olan tüm kullanıcıların "userid"lerini yazdırın
-        List<Object> jsonList02 = jsonPath.getList("findAll{it.id < 5}.userId");
+        List<Integer> jsonList02 = jsonPath.getList("findAll{it.id < 5}.userId");
         System.out.println("jsonList02 = " + jsonList02);
 
         //"Id"si 5 den küçük olan 4 kullanıcı olduğunu doğrulayın
         assertEquals(4, jsonList02.size());
 
         //"Id" si 5 ten küçük tüm kullanıcıların "title" larını yazdırın
-        List<Object> jsonList03 = jsonPath.getList("findAll{it.id < 5}.title");
+        List<String> jsonList03 = jsonPath.getList("findAll{it.id < 5}.title");
         System.out.println("jsonList03 = " + jsonList03);
 
 

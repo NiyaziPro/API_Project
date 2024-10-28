@@ -20,7 +20,7 @@ public class RequestResponse {
    a) Set the url :
    API nin url ini ayarlayınız
 
-   b) Set the expected data / payland :
+   b) Set the expected data / payload :
       Beklenen datayi ayarlayinız
 
    c) Send the request and get the response :
