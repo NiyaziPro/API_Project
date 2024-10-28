@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class GetRequest05 extends PetStoreBaseUrl {
+public class Get05 extends PetStoreBaseUrl {
 
       /*
    Given

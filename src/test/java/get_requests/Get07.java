@@ -10,7 +10,7 @@ import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
 
 
-public class GetRequest07 extends HerokuAppBaseUrl {
+public class Get07 extends HerokuAppBaseUrl {
     
     /*
     Given

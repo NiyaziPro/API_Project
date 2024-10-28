@@ -5,9 +5,8 @@ import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
-import static utilities.AuthenticateContactList.generateToken;
 
-public class GetRequest08 extends ContactAppBaseUrl {
+public class Get08 extends ContactAppBaseUrl {
 
      /*
    Given
