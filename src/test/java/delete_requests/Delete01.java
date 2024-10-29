@@ -9,7 +9,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.*;
+
 
 public class Delete01 extends JsonPlaceHolderBaseUrl {
 
@@ -44,6 +45,10 @@ public class Delete01 extends JsonPlaceHolderBaseUrl {
 
         // 2.Way
         response.then().statusCode(200);
+
+        Map<String, Object> actualData = response.as(HashMap.class);
+
+        assertEquals(payload,actualData);
 
     }
 }
