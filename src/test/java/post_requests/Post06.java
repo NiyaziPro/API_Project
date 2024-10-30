@@ -72,6 +72,7 @@ public class Post06 extends HerokuAppBaseUrl {
         assertEquals(payload.getBookingdates().getCheckout(),actualData.getBooking().getBookingdates().getCheckout());
         assertEquals(payload.getAdditionalneeds(),actualData.getBooking().getAdditionalneeds());
 
+
         System.out.println("actualData.getBookingid() = " + actualData.getBookingid());
 
 
