@@ -23,6 +23,7 @@ bie defa yapmak, böylece testlerin bakımının daha kolay olmasını sağlamak
         String baseUrl = "https://restful-booker.herokuapp.com";
         specification = new RequestSpecBuilder().
                 setBaseUri(baseUrl).
+                addHeader("Accept","application/json").
                 setContentType(ContentType.JSON).
                 build();
     }
