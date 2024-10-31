@@ -6,6 +6,8 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
 
+import utilities.AuthenticateHerokuApp;
+
 public class HerokuAppBaseUrl {
     /*
 AMAÇ :
@@ -23,6 +25,7 @@ bie defa yapmak, böylece testlerin bakımının daha kolay olmasını sağlamak
         String baseUrl = "https://restful-booker.herokuapp.com";
         specification = new RequestSpecBuilder().
                 setBaseUri(baseUrl).
+                addHeader("Cookie", "token=" + AuthenticateHerokuApp.generateToken()).
                 setContentType(ContentType.JSON).
                 build();
     }

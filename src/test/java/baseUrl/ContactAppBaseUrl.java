@@ -5,6 +5,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
+import utilities.AuthenticateContactList;
 
 import static utilities.AuthenticateContactList.generateToken;
 
@@ -25,7 +26,7 @@ bie defa yapmak, böylece testlerin bakımının daha kolay olmasını sağlamak
         String baseUrl = "https://thinking-tester-contact-list.herokuapp.com";
         specification = new RequestSpecBuilder().
                 setBaseUri(baseUrl).
-                addHeader("Authorization",generateToken()).
+                addHeader("Authorization", AuthenticateContactList.generateToken()).
                 setContentType(ContentType.JSON).
                 build();
     }
