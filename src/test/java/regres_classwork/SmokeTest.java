@@ -71,15 +71,15 @@ public class SmokeTest extends RegressBaseUrl {
 
         specification.pathParams("first", "api", "second", "users","third",2);
 
-        DataPojo data = new DataPojo(2,"janet.weaver@reqres.in","Janet","Weaver","https://reqres.in/img/faces/2-image.jpg");
-        SupportPojo support = new SupportPojo("https://reqres.in/#support-heading","To keep ReqRes free, contributions towards server costs are appreciated!");
+        RegresDataPojo data = new RegresDataPojo(2,"janet.weaver@reqres.in","Janet","Weaver","https://reqres.in/img/faces/2-image.jpg");
+        RegresSupportPojo support = new RegresSupportPojo("https://reqres.in/#support-heading","To keep ReqRes free, contributions towards server costs are appreciated!");
 
-        ResponsePojo payload = new ResponsePojo(data,support);
+        RegresResponsePojo payload = new RegresResponsePojo(data,support);
 
         Response response = given(specification).when().
                 get("{first}/{second}/{third}");
 
-        ResponsePojo actualData = response.as(ResponsePojo.class);
+        RegresResponsePojo actualData = response.as(RegresResponsePojo.class);
 
         System.out.println(actualData);
 

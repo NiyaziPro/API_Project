@@ -2,14 +2,14 @@ package pojos;
 
 import java.io.Serializable;
 
-public class SupportPojo implements Serializable {
+public class RegresSupportPojo implements Serializable {
 	private String url;
 	private String text;
 
-	public SupportPojo() {
+	public RegresSupportPojo() {
 	}
 
-	public SupportPojo(String url, String text) {
+	public RegresSupportPojo(String url, String text) {
 		this.url = url;
 		this.text = text;
 	}

@@ -2,17 +2,17 @@ package pojos;
 
 import java.io.Serializable;
 
-public class DataPojo implements Serializable {
+public class RegresDataPojo implements Serializable {
 	private int id;
 	private String email;
 	private String first_name;
 	private String last_name;
 	private String avatar;
 
-	public DataPojo() {
+	public RegresDataPojo() {
 	}
 
-	public DataPojo(int id, String email, String first_name, String last_name, String avatar) {
+	public RegresDataPojo(int id, String email, String first_name, String last_name, String avatar) {
 		this.id = id;
 		this.email = email;
 		this.first_name = first_name;
