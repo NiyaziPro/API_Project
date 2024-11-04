@@ -1,42 +1,44 @@
 package pojos;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.io.Serializable;
 
+
 public class ResponsePojo implements Serializable {
-	private int bookingid;
-	private BookingPojo booking;
+	private DataPojo data;
+	private SupportPojo support;
 
 	public ResponsePojo() {
-
 	}
 
-	public ResponsePojo(int bookingid, BookingPojo booking) {
-		this.bookingid = bookingid;
-		this.booking = booking;
+	public ResponsePojo(DataPojo data, SupportPojo support) {
+		this.data = data;
+		this.support = support;
 	}
 
-	public void setBookingid(int bookingid){
-		this.bookingid = bookingid;
+	public void setData(DataPojo data){
+		this.data = data;
 	}
 
-	public int getBookingid(){
-		return bookingid;
+	public DataPojo getData(){
+		return data;
 	}
 
-	public void setBooking(BookingPojo booking){
-		this.booking = booking;
+	public void setSupport(SupportPojo support){
+		this.support = support;
 	}
 
-	public BookingPojo getBooking(){
-		return booking;
+	public SupportPojo getSupport(){
+		return support;
 	}
 
 	@Override
  	public String toString(){
 		return 
 			"ResponsePojo{" + 
-			"bookingid = '" + bookingid + '\'' + 
-			",booking = '" + booking + '\'' + 
+			"data = '" + data + '\'' + 
+			",support = '" + support + '\'' + 
 			"}";
 		}
 }
