@@ -49,7 +49,9 @@ public class P03 extends RegressBaseUrl {
                         "data.last_name",equalTo("Weaver"),
                         "support.text",equalTo("To keep ReqRes free, contributions towards server costs are appreciated!"));
 
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         JsonPath actualData = response.jsonPath();
 
         assertEquals(200,response.statusCode());
