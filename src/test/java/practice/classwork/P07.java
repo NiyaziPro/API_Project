@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pojos.RegresCreatePojo;
 import pojos.RegresGetPojo;
-import practice.test_data.RegressTestData;
 
 import java.util.HashMap;
 import java.util.Map;
