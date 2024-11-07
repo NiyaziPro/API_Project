@@ -13,7 +13,7 @@ public class GMIBankBaseUrl {
     @BeforeMethod
     public void setUp() {
 
-        String baseUrl = "https://gmibank.com";
+        String baseUrl = "https://www.gmibank.com";
         specification = new RequestSpecBuilder().
                 setBaseUri(baseUrl).
                 addHeader("Authorization", "Bearer " + AuthenticateGMIBank.generateToken()).
